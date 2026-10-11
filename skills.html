@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Навыки — Дмитрий (Nour)</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+  <header class="site-header">
+    <a class="logo" href="index.html">nour<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">00 / главная</a>
+      <a href="projects.html">01 / проекты</a>
+      <a href="skills.html" aria-current="page">02 / навыки</a>
+      <a href="about.html">03 / обо мне</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="page-head">
+      <div class="page-title">
+        <p class="kicker">02 / навыки</p>
+        <h1>Стек<br>и&nbsp;опыт</h1>
+        <p class="lead">
+          Я студент, поэтому мой опыт — это <strong>учёба и пет-проекты</strong>, а не коммерческая разработка.
+          Ниже честная оценка: что использую уверенно, а что пока только пробовал.
+          А ещё можно посмотреть <a href="#path">мой путь по годам</a>.
+        </p>
+      </div>
+      <div class="mini" aria-hidden="true">
+        <div class="pyramid">
+          <div class="side p-front"></div><div class="side p-right"></div>
+          <div class="side p-back"></div><div class="side p-left"></div>
+          <div class="p-base"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="table-wrap">
+      <table class="skills-table">
+        <caption>Шкала: ●○○○○ — разбирался по документации, ●●●●● — использую без подсказок. Названия проектов — ссылки на них.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Технология</th>
+            <th scope="col">Опыт</th>
+            <th scope="col">Где применял</th>
+            <th scope="col">Уровень</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group"><th colspan="4" scope="rowgroup">Основа</th></tr>
+          <tr class="main">
+            <td>Java 17 / 21 <span class="tag">основной</span></td>
+            <td>3 года</td>
+            <td>во всех проектах</td>
+            <td><span class="dots" aria-hidden="true">●●●●<span class="off">●</span></span><span class="sr-only">4 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Spring Boot</td>
+            <td>1,5 года</td>
+            <td>во всех проектах</td>
+            <td><span class="dots" aria-hidden="true">●●●<span class="off">●●</span></span><span class="sr-only">3 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Spring Security</td>
+            <td>полгода</td>
+            <td><a href="projects.html#ledger">Ledger</a></td>
+            <td><span class="dots" aria-hidden="true">●●<span class="off">●●●</span></span><span class="sr-only">2 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Hibernate / JPA</td>
+            <td>1 год</td>
+            <td><a href="projects.html#ledger">Ledger</a>, <a href="projects.html#beacon">Beacon</a></td>
+            <td><span class="dots" aria-hidden="true">●●●<span class="off">●●</span></span><span class="sr-only">3 из 5</span></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="group"><th colspan="4" scope="rowgroup">Данные</th></tr>
+          <tr>
+            <td>PostgreSQL</td>
+            <td>2 года</td>
+            <td><a href="projects.html#ledger">Ledger</a>, <a href="projects.html#beacon">Beacon</a></td>
+            <td><span class="dots" aria-hidden="true">●●●<span class="off">●●</span></span><span class="sr-only">3 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Redis</td>
+            <td>пробовал</td>
+            <td><a href="projects.html#shorty">Shorty</a></td>
+            <td><span class="dots" aria-hidden="true">●●<span class="off">●●●</span></span><span class="sr-only">2 из 5</span></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="group"><th colspan="4" scope="rowgroup">Очереди сообщений</th></tr>
+          <tr>
+            <td>Kafka</td>
+            <td>пробовал</td>
+            <td><a href="projects.html#orbit">Orbit</a></td>
+            <td><span class="dots" aria-hidden="true">●●<span class="off">●●●</span></span><span class="sr-only">2 из 5</span></td>
+          </tr>
+          <tr>
+            <td>RabbitMQ</td>
+            <td>знакомство</td>
+            <td>учебные задачи</td>
+            <td><span class="dots" aria-hidden="true">●<span class="off">●●●●</span></span><span class="sr-only">1 из 5</span></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="group"><th colspan="4" scope="rowgroup">Инфраструктура</th></tr>
+          <tr>
+            <td>Docker / Compose</td>
+            <td>1 год</td>
+            <td><a href="projects.html#orbit">Orbit</a>, <a href="projects.html#pyramid">Pyramid</a></td>
+            <td><span class="dots" aria-hidden="true">●●●<span class="off">●●</span></span><span class="sr-only">3 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Kubernetes</td>
+            <td>знакомство</td>
+            <td>учебные задачи</td>
+            <td><span class="dots" aria-hidden="true">●<span class="off">●●●●</span></span><span class="sr-only">1 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Git, GitHub Actions</td>
+            <td>2 года</td>
+            <td>во всех проектах</td>
+            <td><span class="dots" aria-hidden="true">●●●<span class="off">●●</span></span><span class="sr-only">3 из 5</span></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="group"><th colspan="4" scope="rowgroup">Тесты</th></tr>
+          <tr>
+            <td>JUnit 5, Mockito</td>
+            <td>1 год</td>
+            <td><a href="projects.html#ledger">Ledger</a>, <a href="projects.html#shorty">Shorty</a></td>
+            <td><span class="dots" aria-hidden="true">●●●<span class="off">●●</span></span><span class="sr-only">3 из 5</span></td>
+          </tr>
+          <tr>
+            <td>Testcontainers</td>
+            <td>полгода</td>
+            <td><a href="projects.html#ledger">Ledger</a></td>
+            <td><span class="dots" aria-hidden="true">●●<span class="off">●●●</span></span><span class="sr-only">2 из 5</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="path">
+      <h2 id="path">Путь</h2>
+      <ol class="timeline">
+        <li><time datetime="2023">2023</time> Поступил на ПМИ. Первые программы на Java, основы ООП и алгоритмов.</li>
+        <li><time datetime="2024">2024</time> Структуры данных и SQL. Первая курсовая на Java, привык к Git и Linux.</li>
+        <li><time datetime="2025">2025</time> Spring Boot, JPA и PostgreSQL. Первые REST API и тесты на JUnit.</li>
+        <li class="now"><time datetime="2026">сейчас</time> 4 курс. Микросервисы, Kafka, Docker — и поиск первой стажировки.</li>
+      </ol>
+    </section>
+
+    <a class="next-card" href="about.html">
+      <span class="kicker">дальше</span>
+      <strong>Обо мне</strong>
+      <span class="next-note">что я ищу и как со мной связаться</span>
+    </a>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Дмитрий (Nour) · сайт на HTML и CSS, без JavaScript</p>
+    <p><a href="index.html">на главную ↑</a></p>
+  </footer>
+
+</body>
+</html>
