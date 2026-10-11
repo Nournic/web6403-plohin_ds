@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Проекты — Дмитрий (Nour)</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+  <header class="site-header">
+    <a class="logo" href="index.html">nour<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">00 / главная</a>
+      <a href="projects.html" aria-current="page">01 / проекты</a>
+      <a href="skills.html">02 / навыки</a>
+      <a href="about.html">03 / обо мне</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="page-head">
+      <div class="page-title">
+        <p class="kicker">01 / проекты</p>
+        <h1>Что я<br>построил</h1>
+        <p class="lead">
+          Учебные и пет-проекты: от простого REST API до событийной системы на Kafka.
+          В каждом я старался сделать не только <em>чтобы работало</em>, но и чтобы было
+          <strong>покрыто тестами и запускалось одной командой</strong>.
+        </p>
+      </div>
+
+      <div class="mini" aria-hidden="true">
+        <div class="cube"><div class="face f-front"></div><div class="face f-back"></div><div class="face f-right"></div><div class="face f-left"></div><div class="face f-top"></div><div class="face f-bottom"></div></div>
+      </div>
+    </section>
+
+    <fieldset class="filter">
+      <legend>показать</legend>
+      <input type="radio" name="filter" id="f-all" checked>
+      <label for="f-all">все</label>
+      <input type="radio" name="filter" id="f-db">
+      <label for="f-db">базы данных</label>
+      <input type="radio" name="filter" id="f-mq">
+      <label for="f-mq">очереди</label>
+      <input type="radio" name="filter" id="f-docker">
+      <label for="f-docker">Docker</label>
+      <input type="radio" name="filter" id="f-test">
+      <label for="f-test">тесты</label>
+    </fieldset>
+
+    <section class="works">
+
+      <article class="work featured" id="ledger" data-tags="db test">
+        <img src="img/proj-ledger.svg" alt="Схема Ledger: клиент отправляет запрос в REST API под защитой JWT, API работает с базой PostgreSQL">
+        <div class="work-text">
+          <h2>Ledger</h2>
+          <ul class="chips">
+            <li>Java 21</li><li>Spring Boot</li><li>Spring Security</li><li>PostgreSQL</li><li>Flyway</li><li>Testcontainers</li>
+          </ul>
+          <p>
+            REST API для учёта личных финансов: счета, операции, категории и отчёты за период.
+            Авторизация через <strong>JWT</strong>, миграции базы через Flyway,
+            интеграционные тесты на настоящем PostgreSQL в <span class="amber">Testcontainers</span>.
+          </p>
+          <p class="work-links"><a>GitHub</a> <a>Swagger</a></p>
+        </div>
+      </article>
+
+      <article class="work" id="orbit" data-tags="mq docker">
+        <img src="img/proj-orbit.svg" alt="Схема Orbit: сервис заказов публикует события в топик Kafka, сервис уведомлений их читает, ошибки уходят в DLQ">
+        <div class="work-text">
+          <h2>Orbit</h2>
+          <ul class="chips"><li>Spring Boot</li><li>Kafka</li><li>Docker Compose</li></ul>
+          <p>
+            Событийные уведомления: сервис заказов публикует события в Kafka, сервис уведомлений
+            их обрабатывает. Повторы с задержкой и очередь <em>«мёртвых»</em> сообщений (DLQ).
+          </p>
+          <p class="work-links"><a>GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="work" id="beacon" data-tags="db">
+        <img src="img/proj-beacon.svg" alt="Схема Beacon: график доступности сайта с провалом и оповещением">
+        <div class="work-text">
+          <h2>Beacon</h2>
+          <ul class="chips"><li>Spring Scheduler</li><li>PostgreSQL</li><li>Micrometer</li><li>Prometheus</li></ul>
+          <p>
+            Мониторинг доступности сайтов: проверки по расписанию, история в PostgreSQL,
+            метрики для Prometheus и оповещения в Telegram-бота.
+          </p>
+          <p class="work-links"><a>GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="work" id="shorty" data-tags="db test">
+        <img src="img/proj-shorty.svg" alt="Схема Shorty: длинная ссылка сжимается в короткую, рядом кеш Redis и ограничение запросов">
+        <div class="work-text">
+          <h2>Shorty</h2>
+          <ul class="chips"><li>Spring Boot</li><li>Redis</li><li>Gatling</li></ul>
+          <p>
+            Сокращатель ссылок: кеш в Redis, ограничение частоты запросов (rate limiting)
+            и нагрузочное тестирование на Gatling.
+          </p>
+          <p class="work-links"><a>GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="work" id="pyramid" data-tags="docker">
+        <img src="img/proj-pyramid.svg" alt="Схема Pyramid: API Gateway наверху, под ним сервисы каталога, корзины и заказов, рядом реестр сервисов Eureka">
+        <div class="work-text">
+          <h2>Pyramid <span class="tag">курсовая</span></h2>
+          <ul class="chips"><li>Spring Cloud</li><li>Gateway</li><li>Eureka</li><li>Docker</li></ul>
+          <p>
+            Учебный интернет-магазин на микросервисах: API Gateway, обнаружение сервисов,
+            каталог, корзина и заказы. Всё поднимается одной командой <code>docker compose up</code>.
+          </p>
+          <p class="work-links"><a>GitHub</a></p>
+        </div>
+      </article>
+
+    </section>
+
+    <a class="next-card" href="skills.html">
+      <span class="kicker">дальше</span>
+      <strong>Навыки и стек</strong>
+      <span class="next-note">какие технологии стоят за этими проектами</span>
+    </a>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Дмитрий (Nour) · сайт на HTML и CSS, без JavaScript</p>
+    <p><a href="index.html">на главную ↑</a></p>
+  </footer>
+
+</body>
+</html>
