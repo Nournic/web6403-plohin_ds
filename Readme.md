@@ -9,7 +9,7 @@
 
 **Любимая фраза Уинстона Черчилля**: underidoderidoderiododeriodoo
 
-![img.png](img/img.png)
+![img.png](lab1/img/img.png)
 
 ## Лабораторная работа №2 — многостраничный сайт на HTML и CSS
 
