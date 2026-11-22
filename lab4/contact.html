@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Связаться с Дмитрием (Nour): стажировки, backend-разработка и совместные проекты.">
+  <title>Связаться — Дмитрий (Nour)</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="contact.js" defer></script>
+</head>
+<body class="page">
+  <header class="site-header">
+    <a class="logo" href="index.html">nour<span>.</span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="index.html">00 / главная</a>
+      <a href="projects.html">01 / проекты</a>
+      <a href="skills.html">02 / навыки</a>
+      <a href="about.html">03 / обо мне</a>
+      <a href="contact.html" aria-current="page">04 / связь</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="page-head contact-head">
+      <div class="page-title">
+        <p class="kicker">04 / на связи</p>
+        <h1>Есть идея?<br>Обсудим</h1>
+        <p class="lead">Открыт к стажировкам, интересным задачам и новым знакомствам в разработке. Напиши — буду рад обсудить.</p>
+      </div>
+      <div class="mini" aria-hidden="true"><div class="hoop"></div></div>
+    </section>
+
+    <div class="contact-layout">
+      <form class="contact-form" id="contact-form" action="/api/contact" method="post">
+        <div class="contact-form__head">
+          <div>
+            <p class="kicker">НОВОЕ СООБЩЕНИЕ / 01</p>
+            <h2>Напиши мне<span>.</span></h2>
+          </div>
+          <span class="contact-form__head-mark" aria-hidden="true">↗</span>
+        </div>
+
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-name">Имя <span aria-hidden="true">*</span></label>
+            <input class="contact-form__input" type="text" name="name" id="contact-name" placeholder="Как тебя зовут" minlength="2" maxlength="80" autocomplete="name" required>
+          </div>
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-email">Электронная почта <span aria-hidden="true">*</span></label>
+            <input class="contact-form__input" type="email" name="email" id="contact-email" placeholder="name@example.com" maxlength="254" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="contact-topic">О чём поговорим? <span aria-hidden="true">*</span></label>
+          <select class="contact-form__input" name="topic" id="contact-topic" required>
+            <option value="" selected disabled>Выбери тему</option>
+            <option value="internship">Стажировка или работа</option>
+            <option value="project">Совместный проект</option>
+            <option value="question">Вопрос по разработке</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="contact-message">Твоё сообщение <span aria-hidden="true">*</span></label>
+          <textarea class="contact-form__input contact-form__input--message" name="message" id="contact-message" placeholder="Расскажи немного о своей идее или задаче…" minlength="5" maxlength="2000" required></textarea>
+          <span class="contact-form__hint">Не менее 5 символов</span>
+        </div>
+
+        <label class="contact-form__check" for="contact-consent">
+          <input type="checkbox" id="contact-consent" name="consent" value="yes" required>
+          <span>Согласен на обработку введённых данных для отправки сообщения <span aria-hidden="true">*</span></span>
+        </label>
+
+        <div class="contact-form__actions">
+          <button class="btn contact-form__button" id="contact-submit" type="submit">отправить сообщение <span aria-hidden="true">↗</span></button>
+          <span class="contact-form__required">* Обязательные поля</span>
+        </div>
+        <p class="contact-form__feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-aside" aria-label="Темы для общения">
+        <p class="contact-aside__eyebrow">// О СОТРУДНИЧЕСТВЕ</p>
+        <h2>Хороший проект начинается с диалога<span>.</span></h2>
+        <p class="contact-aside__description">Мне интересны backend-системы, проектирование API и задачи, где важны архитектура, надёжность и качество кода.</p>
+        <div class="contact-aside__separator" aria-hidden="true"></div>
+        <p class="contact-aside__subhead">Можно обсудить</p>
+        <ul class="contact-aside__topics">
+          <li><span>01</span> Стажировку или работу</li>
+          <li><span>02</span> Совместную разработку</li>
+          <li><span>03</span> Идеи и вопросы</li>
+        </ul>
+        <div class="contact-aside__art" aria-hidden="true">
+          <span class="contact-aside__ring contact-aside__ring--outer"></span>
+          <span class="contact-aside__ring contact-aside__ring--inner"></span>
+          <span class="contact-aside__core"></span>
+          <span class="contact-aside__satellite"></span>
+        </div>
+      </aside>
+    </div>
+
+    <a class="next-card" href="projects.html">
+      <span class="kicker">ещё немного обо мне</span>
+      <strong>Посмотреть проекты</strong>
+      <span class="next-note">REST API, базы данных и микросервисы</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Дмитрий (Nour) · HTML, CSS, JavaScript</p>
+    <p><a href="index.html">на главную ↑</a></p>
+  </footer>
+</body>
+</html>

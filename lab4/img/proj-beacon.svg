@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#131c26"/>
+      <stop offset="1" stop-color="#090d13"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fc3c9" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#4fc3c9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <g stroke="#1f2a36" stroke-width="1">
+    <path d="M40 90 H360 M40 140 H360 M40 190 H360 M40 240 H360"/>
+  </g>
+
+  <path d="M40 120 L80 116 L110 122 L140 112 L170 118 L200 114 L222 120 L236 226 L250 118 L280 112 L310 118 L340 110 L360 114 V240 H40 Z" fill="url(#area)"/>
+  <path d="M40 120 L80 116 L110 122 L140 112 L170 118 L200 114 L222 120 L236 226 L250 118 L280 112 L310 118 L340 110 L360 114" fill="none" stroke="#4fc3c9" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <circle cx="236" cy="226" r="7" fill="#ff5a3c"/>
+  <circle cx="236" cy="226" r="16" fill="none" stroke="#ff5a3c" stroke-opacity="0.4" stroke-width="2"/>
+
+  <path d="M300 52 a14 14 0 0 1 14 14 V80 l6 6 H280 l6 -6 V66 a14 14 0 0 1 14 -14 Z" fill="none" stroke="#ffa65a" stroke-width="2"/>
+  <circle cx="300" cy="92" r="3" fill="#ffa65a"/>
+  <g font-family="Consolas, monospace" font-size="11" fill="#c9bfb3">
+    <text x="40" y="66">uptime 99.2%</text>
+    <text x="252" y="262" fill="#ff9a82">503 → alert</text>
+  </g>
+</svg>

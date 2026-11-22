@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#131c26"/>
+      <stop offset="1" stop-color="#090d13"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <ellipse cx="200" cy="140" rx="92" ry="34" fill="none" stroke="#4fc3c9" stroke-width="8" opacity="0.35" filter="url(#glow)"/>
+  <ellipse cx="200" cy="140" rx="92" ry="34" fill="none" stroke="#4fc3c9" stroke-width="3"/>
+  <g fill="#ffa65a">
+    <circle cx="112" cy="132" r="5"/>
+    <circle cx="150" cy="110" r="5"/>
+    <circle cx="200" cy="106" r="5" fill="#f4efe8"/>
+    <circle cx="252" cy="110" r="5"/>
+    <circle cx="290" cy="138" r="5"/>
+  </g>
+
+  <rect x="22" y="118" width="62" height="44" rx="6" fill="#141c26" stroke="#ffa65a" stroke-width="2"/>
+  <rect x="316" y="118" width="62" height="44" rx="6" fill="#141c26" stroke="#4fc3c9" stroke-width="2"/>
+  <path d="M84 140 H104" stroke="#ffa65a" stroke-width="2"/>
+  <path d="M296 140 H316" stroke="#4fc3c9" stroke-width="2"/>
+
+  <path d="M200 174 V214" stroke="#ff5a3c" stroke-width="2" stroke-dasharray="4 4"/>
+  <rect x="172" y="214" width="56" height="30" rx="6" fill="#1a1012" stroke="#ff5a3c" stroke-width="2"/>
+  <g font-family="Consolas, monospace" font-size="11" fill="#c9bfb3" text-anchor="middle">
+    <text x="53" y="144">orders</text>
+    <text x="347" y="144">notify</text>
+    <text x="200" y="62" fill="#4fc3c9">topic: order-events</text>
+    <text x="200" y="233" fill="#ff9a82">DLQ</text>
+  </g>
+</svg>
