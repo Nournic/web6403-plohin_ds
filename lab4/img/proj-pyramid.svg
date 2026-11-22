@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#131c26"/>
+      <stop offset="1" stop-color="#090d13"/>
+    </linearGradient>
+    <linearGradient id="lit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffa65a"/>
+      <stop offset="1" stop-color="#6b3519"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <g stroke="#4fc3c9" stroke-width="2" stroke-opacity="0.6">
+    <path d="M200 102 L90 196 M200 102 L200 196 M200 102 L310 196"/>
+  </g>
+  <g stroke="#3a4654" stroke-width="1.5" stroke-dasharray="3 4">
+    <path d="M90 196 L56 80 M200 196 L56 80 M310 196 L56 80"/>
+  </g>
+
+  <polygon points="200,44 230,104 170,104" fill="url(#lit)"/>
+
+  <g fill="#141c26" stroke-width="2">
+    <rect x="56" y="196" width="68" height="40" rx="6" stroke="#4fc3c9"/>
+    <rect x="166" y="196" width="68" height="40" rx="6" stroke="#4fc3c9"/>
+    <rect x="276" y="196" width="68" height="40" rx="6" stroke="#4fc3c9"/>
+  </g>
+
+  <circle cx="56" cy="80" r="18" fill="none" stroke="#ffa65a" stroke-width="2"/>
+  <circle cx="56" cy="80" r="5" fill="#ffa65a"/>
+  <g font-family="Consolas, monospace" font-size="11" fill="#c9bfb3" text-anchor="middle">
+    <text x="200" y="124">gateway</text>
+    <text x="90" y="220">catalog</text>
+    <text x="200" y="220">cart</text>
+    <text x="310" y="220">orders</text>
+    <text x="56" y="48" fill="#ffa65a">eureka</text>
+  </g>
+</svg>
